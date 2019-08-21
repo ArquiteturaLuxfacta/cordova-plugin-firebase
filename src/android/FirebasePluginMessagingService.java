@@ -26,6 +26,12 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
 
     private static final String TAG = "FirebasePlugin";
 
+    @Override
+    public void onNewToken(String s) {
+        super.onNewToken(s);
+        Log.d("NEW_TOKEN",s);
+    }
+
     /**
      * Get a string from resources without importing the .R package
      *
